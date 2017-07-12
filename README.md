@@ -1,7 +1,9 @@
 # Hangman
 > Save him if you can!
 
-You are going to play it till he dies, or you.
+[Click here to play](https://patelvivek.com/hangman)
+
+You are going to play it till he dies, or you. 😁
 
 
 ### Libs/tools used

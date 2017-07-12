@@ -1,0 +1,16 @@
+.corner {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  display: block;
+  background-color: $accentColor;
+  transform: rotate(45deg);
+  bottom: -380px;
+  right: -380px;
+  @media (max-width: $phone) {
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    right: -100px;
+  }
+}

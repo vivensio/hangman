@@ -1,0 +1,38 @@
+.board {
+  position: relative;
+  box-sizing: border-box;
+  background-color: $white;
+  border-radius: 10px;
+  height: $boardHeight;
+  width: $boardWidth;
+  padding: 36px;
+  overflow: hidden;
+  @media (max-width: $tablet) {
+    height: $boardHeight + $boardHeight/3;
+    width: 90%;
+  }
+  @media (max-width: $phone) {
+    height: $boardHeight / 2;
+    position: absolute;
+    top: 3vh;
+  }
+}
+
+.typebox--full {
+  position: fixed;
+  top: -100px;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 110%;
+  height: 110%;
+  overflow: hidden;
+  z-index: 10;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  opacity: 0;
+  user-select: none;
+  cursor: default;
+}

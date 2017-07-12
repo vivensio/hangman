@@ -1,0 +1,22 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fillSlot {
+  0% {
+    background-color: #88c257;
+  }
+  100% {
+    background-color: $darkAccentColor;
+  }
+}

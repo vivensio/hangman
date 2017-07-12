@@ -1,0 +1,40 @@
+.game-over {
+  @include overlay();
+  @include flexCentered();
+  color: $white;
+  flex-flow: column wrap;
+  z-index: 10;
+  animation: fadeIn 800ms cubic-bezier(0.96, 0.1, 0, 0.66);
+  @media (max-width: $phone) {
+    justify-content: flex-start;
+    padding-top: 10%;
+    background-color: transparentize($backgroundColor, 0.05);
+  }
+  &__title {
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-size: 3.8rem;
+  }
+}
+.btn {
+  background: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: "AllerDisplay", sans-serif;
+  outline-color: transparent;
+  &--new {
+    border: 2px dashed $uiAccentColor;
+    color: $uiAccentColor;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: color 250ms ease-out,
+                background-color 250ms ease-out;
+    &:hover, &:active {
+      color: $white;
+      background-color: $uiAccentColor;
+    }
+  }
+}

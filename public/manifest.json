@@ -1,0 +1,15 @@
+{
+  "short_name": "Hangman",
+  "name": "Play Hangman",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#3b4163",
+  "background_color": "#3b4163"
+}

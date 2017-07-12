@@ -1,0 +1,48 @@
+.slots-wrapper {
+  position: absolute;
+  bottom: 36px;
+  left: 36px;
+  right: 36px;
+  z-index: 1;
+  @media (max-width: $phone) {
+    bottom: auto;
+    right: 0;
+    left: 0;
+    margin-left: 32%;
+  }
+}
+.slots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  @media (max-width: $tablet) {
+    justify-content: flex-start;
+  }
+}
+.slot {
+  @include flexCentered();
+  background-color: $darkAccentColor;
+  color: $white;
+  width: 60px;
+  height: 70px;
+  margin: 0 7px 7px 0;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-size: 2.8rem;
+  &--blank {
+    background-color: #e6e6e7;
+  }
+  &--filled {
+    animation: fillSlot 2s ease-out;
+  }
+  @media (max-width: $phone) {
+    width: 40px;
+    height: 45px;
+    margin: 0 3px 3px 0;
+  }
+}

@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'AllerDisplay';
+  src: url(../fonts/AllerDisplay.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "AllerDisplay", sans-serif;
+}
+.container {
+  @include flexCentered();
+  background-color: $backgroundColor;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  font-size: 1.2rem;
+}
